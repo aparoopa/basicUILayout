@@ -17,7 +17,9 @@ import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 
 public class MainActivity extends AppCompatActivity {
-    EditText UsernameEt,PasswordEt; GoogleSignInClient mGoogleSignInClient; SignInButton signin;
+    EditText UsernameEt, PasswordEt;
+    GoogleSignInClient mGoogleSignInClient;
+    SignInButton signin;
     int RC_SIGN_IN= 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +52,9 @@ public class MainActivity extends AppCompatActivity {
         String password= PasswordEt.getText().toString();
         String type= "login";
         BackgroundWorker backgroundWorker= new BackgroundWorker(this);
-        backgroundWorker.execute(type, username, password);
+       backgroundWorker.execute(type, username, password);
+        Intent intent=new Intent(MainActivity.this, Menu.class);
+        startActivity(intent);
 
     }
     private void signIn()

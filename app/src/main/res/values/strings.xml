@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Mysql_connection</string>
+    <string name="title_activity_mainmenu">Mainmenu</string>
 </resources>
