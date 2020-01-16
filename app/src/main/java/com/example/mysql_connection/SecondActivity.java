@@ -24,10 +24,14 @@ public class SecondActivity extends AppCompatActivity {
     TextView name, email, id;
     Button signOut;
     GoogleSignInClient mGoogleSignInClient;
+    View view;
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
+        view= this.getWindow().getDecorView();
+        view.setBackgroundResource(R.color.lightgreen);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()

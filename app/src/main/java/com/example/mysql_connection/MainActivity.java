@@ -21,10 +21,15 @@ public class MainActivity extends AppCompatActivity {
     GoogleSignInClient mGoogleSignInClient;
     SignInButton signin;
     int RC_SIGN_IN= 0;
+    View view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        view= this.getWindow().getDecorView();
+        view.setBackgroundResource(R.color.lightgreen);
+
         UsernameEt= (EditText)findViewById(R.id.etUserName);
         PasswordEt= (EditText) findViewById(R.id.etPassword);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)

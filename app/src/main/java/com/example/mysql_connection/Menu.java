@@ -13,11 +13,15 @@ public class Menu extends AppCompatActivity {
     private Button VFriends;
     private Button Trivia;
     private Button PlyOffline;
+    View view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        view= this.getWindow().getDecorView();
+        view.setBackgroundResource(R.color.lightgreen);
 
         VComputer = (Button) findViewById(R.id.qComputer);
         VFriends = (Button) findViewById(R.id.qFriends);

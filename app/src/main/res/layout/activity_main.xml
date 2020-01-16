@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/etUserName"
-        android:layout_width="285dp"
-        android:layout_height="53dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="63dp"
         android:layout_marginTop="226dp"
         android:layout_marginEnd="63dp"
@@ -48,6 +48,8 @@
         android:layout_marginBottom="275dp"
         android:onClick="OnLogin"
         android:text="login"
+        android:textColor="@android:color/black"
+        android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

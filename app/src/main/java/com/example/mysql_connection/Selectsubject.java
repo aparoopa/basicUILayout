@@ -11,11 +11,14 @@ import android.widget.Spinner;
 
 public class Selectsubject extends AppCompatActivity {
     private Button Proceed;
-
+    View view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selectsubject);
+        //for background color
+        view= this.getWindow().getDecorView();
+        view.setBackgroundResource(R.color.lightgreen);
 
         Proceed = (Button) findViewById(R.id.Btnproceed);
 

@@ -11,11 +11,14 @@ import android.widget.Spinner;
 public class Level extends AppCompatActivity {
 
 
-
+    View view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level);
+
+        view= this.getWindow().getDecorView();
+        view.setBackgroundResource(R.color.lightgreen);
 
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner2);
