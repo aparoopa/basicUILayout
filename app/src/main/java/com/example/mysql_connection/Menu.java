@@ -34,6 +34,25 @@ public class Menu extends AppCompatActivity {
                 selectsubject();
             }
         });
+        VFriends.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selectsubject();
+            }
+        });
+        Trivia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selectsubject();
+            }
+        });
+        PlyOffline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selectsubject();
+            }
+        });
+
     }
     private void selectsubject(){
 
